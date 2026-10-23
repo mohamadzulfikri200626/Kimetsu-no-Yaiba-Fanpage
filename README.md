@@ -17,7 +17,7 @@ Teks di halaman utama pakai bahasa Inggris karena ceritanya diambil dari Wikiped
 
 ## Isi halaman utama
 
-Kalau dibuka dari atas, urutannya begini. Pertama ada header dengan menu navigasi, lalu hero yang pakai video sebagai background. Setelah itu ada About (cerita singkat), Anime Facts (daftar fakta dan tabel informasi), dan Characters yang isinya 8 card karakter. Berikutnya ada Gallery, tiga card Recommendations, dan Music yang punya pemutar audio untuk 4 lagu. Barulah di bagian bawah ada form ulasan (cuma tampilan, nggak ngirim data) dan footer.
+Kalau dibuka dari atas, urutannya begini. Pertama ada header dengan menu navigasi, lalu hero yang pakai video sebagai background. Setelah itu ada About (cerita singkat), Anime Facts (daftar fakta dan tabel informasi), dan Characters yang isinya 8 card karakter. Berikutnya ada Gallery, tiga card Recommendations, dan Music yang punya pemutar audio untuk 1 lagu. Barulah di bagian bawah ada form ulasan (cuma tampilan, nggak ngirim data) dan footer.
 
 ## Struktur folder
 
@@ -32,7 +32,7 @@ MP_MohamadZulfikri/
 └── assets/
     ├── images/   gambar karakter, galeri (gallery-1 sampai 4), rekomendasi (rec-1 sampai 3)
     ├── video/    infinity-castle.mp4 (background hero)
-    └── audio/    4 lagu untuk bagian Music
+    └── audio/    1 lagu untuk bagian Music yang berfungsi
 ```
 
 File halaman ditaruh di luar, CSS di folder `css`, dan semua media di folder `assets`. Jadi kalau mau cari file, tinggal lihat folder sesuai jenisnya.
