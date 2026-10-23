@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimetsu no Yaiba | Fan Page</title>
+  <!-- External CSS: semua halaman dihubungkan ke satu file CSS yang sama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Semantic HTML: header dipakai buat kepala halaman yang isinya logo dan navigasi -->
+  <header>
+    <div class="header-isi">
+      <a class="logo" href="index.html">KIMETSU NO YAIBA</a>
+      <nav>
+        <!-- List: menu navigasi disusun pakai ul dan li -->
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <!-- Intra-page link: tanda pagar bikin halaman lompat ke section dengan id about -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero atau banner: bagian pembuka yang pertama kelihatan -->
+    <section id="hero">
+      <!-- Media: video dipakai sebagai background hero -->
+      <video class="video-bg" autoplay muted loop playsinline poster="assets/images/hero.jpg">
+        <source src="assets/video/infinity-castle.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <!-- Teks: h1 buat judul utama dan p buat paragraf deskripsi -->
+        <h1>KIMETSU NO YAIBA</h1>
+        <p class="tagline">Demon Slayer: the Blade of Demon Destruction.</p>
+        <p>
+          Demon Slayer: Kimetsu no Yaiba is a Japanese manga series by Koyoharu Gotouge, adapted into an
+          anime by Ufotable. It follows Tanjiro Kamado, who sets out to become a Demon Slayer after his
+          family is slaughtered and his younger sister Nezuko is turned into a demon.
+        </p>
+        <a class="tombol" href="#characters">Explore Characters</a>
+      </div>
+    </section>
+
+    <!-- Deskripsi topik: cerita singkat tentang anime Kimetsu no Yaiba -->
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <article>
+          <p>
+            Tanjiro Kamado is the eldest son of a family that sells charcoal. When a demon attack kills his
+            mother and younger siblings and turns his sister Nezuko into a demon, he resolves to become a
+            Demon Slayer in order to find a cure for her.
+          </p>
+          <p>
+            The Demon Slayer Corps is an organization that has existed since ancient times to protect humanity
+            from demons. Its members act in secrecy, even from the Japanese government, and its strongest
+            swordsmen are known as the Hashira, or Pillars. Behind it all stands Muzan Kibutsuji, the first
+            demon, who attacked the Kamado family while seeking a demon that can withstand sunlight.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="facts" class="gelap">
+      <div class="container">
+        <h2>Anime Facts</h2>
+        <div class="dua-kolom">
+          <!-- List: daftar fakta ditulis pakai ul dan li -->
+          <ul class="daftar-fakta">
+            <li>The manga was written and illustrated by Koyoharu Gotouge.</li>
+            <li>It was serialized in Weekly Sh&#333;nen Jump from February 2016 to May 2020.</li>
+            <li>The chapters were collected in 23 volumes.</li>
+            <li>The anime by Ufotable began in 2019 and is directed by Haruo Sotozaki.</li>
+            <li>The film Mugen Train premiered in Japan in October 2020.</li>
+          </ul>
+          <!-- Tabel: caption jadi judul lalu tr th dan td buat baris dan selnya -->
+          <table>
+            <caption>Series Information</caption>
+            <tr>
+              <th>Title</th>
+              <td>Kimetsu no Yaiba (Demon Slayer)</td>
+            </tr>
+            <tr>
+              <th>Genre</th>
+              <td>Adventure, Dark Fantasy, Martial Arts</td>
+            </tr>
+            <tr>
+              <th>Animation Studio</th>
+              <td>Ufotable</td>
+            </tr>
+            <tr>
+              <th>Original Manga</th>
+              <td>Koyoharu Gotouge</td>
+            </tr>
+            <tr>
+              <th>Anime Run</th>
+              <td>2019 - 2026</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="characters">
+      <div class="container">
+        <h2>Characters</h2>
+        <div class="grid-karakter">
+
+          <article class="kartu kartu-tanjiro">
+            <!-- Media: gambar karakter dengan alt sebagai teks pengganti -->
+            <img src="assets/images/tanjiro.jpg" alt="Tanjiro Kamado">
+            <div class="kartu-isi">
+              <h3>Tanjiro Kamado</h3>
+              <p>The eldest son of a charcoal-selling family. After a demon attack kills his mother and younger siblings and turns Nezuko into a demon, he becomes a Demon Slayer to cure her.</p>
+              <ul>
+                <li>Role: Demon Slayer</li>
+                <li>Technique: Water Breathing, Hinokami Kagura</li>
+                <li>Voice (JP): Natsuki Hanae</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-nezuko">
+            <img src="assets/images/nezuko.jpg" alt="Nezuko Kamado">
+            <div class="kartu-isi">
+              <h3>Nezuko Kamado</h3>
+              <p>Tanjiro's younger sister, turned into a demon in the attack. She still sees humans as her kin and protects them from other demons.</p>
+              <ul>
+                <li>Role: Tanjiro's sister</li>
+                <li>Trait: Sleeps instead of eating humans</li>
+                <li>Voice (JP): Akari Kitō</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-zenitsu">
+            <img src="assets/images/zenitsu.jpg" alt="Zenitsu Agatsuma">
+            <div class="kartu-isi">
+              <h3>Zenitsu Agatsuma</h3>
+              <p>A Demon Slayer who joined the Corps alongside Tanjiro. He seems fearful and anxious, yet fights effectively while unconscious.</p>
+              <ul>
+                <li>Role: Demon Slayer</li>
+                <li>Technique: Thunder Breathing</li>
+                <li>Voice (JP): Hiro Shimono</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-inosuke">
+            <img src="assets/images/inosuke.jpg" alt="Inosuke Hashibira">
+            <div class="kartu-isi">
+              <h3>Inosuke Hashibira</h3>
+              <p>A Demon Slayer raised by boars, which left him feral and aggressive. He wears a boar's head as a mask and wields two serrated swords.</p>
+              <ul>
+                <li>Role: Demon Slayer</li>
+                <li>Technique: Beast Breathing (self-taught)</li>
+                <li>Voice (JP): Yoshitsugu Matsuoka</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-genya">
+            <img src="assets/images/genya.jpg" alt="Genya Shinazugawa">
+            <div class="kartu-isi">
+              <h3>Genya Shinazugawa</h3>
+              <p>A Demon Slayer who cannot use breathing techniques. Instead, he temporarily gains a demon's powers by eating its flesh. He is the younger brother of the Wind Hashira.</p>
+              <ul>
+                <li>Role: Demon Slayer</li>
+                <li>Weapon: Shotgun with Nichirin steel pellets</li>
+                <li>Voice (JP): Nobuhiko Okamoto</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-kanao">
+            <img src="assets/images/kanao.jpg" alt="Kanao Tsuyuri">
+            <div class="kartu-isi">
+              <h3>Kanao Tsuyuri</h3>
+              <p>The adopted sister of Shinobu Kocho. Due to a traumatic childhood she once relied on a coin flip to make decisions, but learns to act on her own will.</p>
+              <ul>
+                <li>Role: Demon Slayer (tsuguko)</li>
+                <li>Technique: Flower Breathing</li>
+                <li>Voice (JP): Reina Ueda</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-murata">
+            <img src="assets/images/murata.jpg" alt="Murata">
+            <div class="kartu-isi">
+              <h3>Murata</h3>
+              <p>A member of the Demon Slayer Corps who survived the Natagumo Mountain operation and befriended Tanjiro. His determination helps him grow stronger in Hashira Training.</p>
+              <ul>
+                <li>Role: Demon Slayer Corps member</li>
+                <li>Trait: Determined and hardworking</li>
+                <li>Voice (JP): Kōki Miyata</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="kartu kartu-giyu">
+            <img src="assets/images/giyu.jpg" alt="Giyu Tomioka">
+            <div class="kartu-isi">
+              <h3>Giyu Tomioka</h3>
+              <p>The Water Hashira and the first Demon Slayer Tanjiro meets. He spares Nezuko and sends the siblings to his mentor, Sakonji Urokodaki.</p>
+              <ul>
+                <li>Role: Water Hashira</li>
+                <li>Technique: Water Breathing</li>
+                <li>Voice (JP): Takahiro Sakurai</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gelap">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="galeri">
+          <figure>
+            <img src="assets/images/gallery-1.jpg" alt="Gallery 1">
+            <figcaption>Season 1 Unwavering Resolve Arc</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/gallery-2.jpeg" alt="Gallery 2">
+            <figcaption>Season 2 Entertaiment District Arc</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/gallery-3.jpg" alt="Gallery 3">
+            <figcaption>Season 3 Swordsmith Village Arc</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/gallery-4.jpg" alt="Gallery 4">
+            <figcaption>Season 4 Hashira Training Arc</figcaption>
+          </figure>
+        </div>
+        <p class="trailer">
+          Want to see the trailer? Watch it on the
+          <!-- External link: target blank bikin link kebuka di tab baru -->
+          <a href="https://www.demonslayer-anime.com" target="_blank" rel="noopener noreferrer">official Demon Slayer website</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <div class="container">
+        <h2>Recommendations</h2>
+        <div class="daftar-rekom">
+
+          <!-- Tiga card rekomendasi dimulai dari card utama ini -->
+          <article class="rekom rekom-utama">
+            <img src="assets/images/rec-1.jpg" alt="Mugen Train Arc">
+            <div class="kartu-isi">
+              <h3>Mugen Train Arc</h3>
+              <p>An investigation aboard the Mugen Train becomes a battle against the demon Enmu, followed by Rengoku's fight with Akaza.</p>
+            </div>
+          </article>
+
+          <article class="rekom">
+            <img src="assets/images/rec-2.jpg" alt="Tanjiro versus Rui">
+            <div class="kartu-isi">
+              <h3>Infinity Castle Arc</h3>
+              <p>Follows the Demon Slayer Corps as they are dragged into an extra-dimensional fortress to fight the demon king Muzan Kibutsuji and his Upper-Rank demons.</p>
+            </div>
+          </article>
+
+          <article class="rekom">
+            <img src="assets/images/rec-3.jpg" alt="Kyojuro Rengoku">
+            <div class="kartu-isi">
+              <h3>Zenitsu vs Kaigaku</h3>
+              <p>The battle between Zenitsu Agatsuma and Kaigaku is one of the most emotionally charged, personal confrontations in Demon Slayer: Kimetsu no Yaiba, occurring within the Infinity Castle Arc</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="container">
+        <h2>Music</h2>
+        <p class="catatan">Demon Slayer soundtrack. Song copyrights belong to their respective owners.</p>
+        <div class="daftar-lagu">
+
+          <article class="lagu">
+            <h3>Gurenge</h3>
+            <p class="artis">LiSA</p>
+            <p class="info">First season opening</p>
+            <!-- Media: audio pakai controls biar ada tombol play dan volume -->
+            <audio controls preload="none">
+              <source src="assets/audio/gurenge.mp3" type="audio/mpeg">
+              Your browser does not support the audio player.
+            </audio>
+          </article>
+
+          <article class="lagu">
+            <h3>Infinity Castle</h3>
+            <p class="artis">Yuuki Kajiura and Go Shiina</p>
+            <p class="info">Season 4 Episode 8</p>
+            <audio controls preload="none">
+              <source src="assets/audio/Infinity-Castle.mp3" type="audio/mpeg">
+              Your browser does not support the audio player.
+            </audio>
+          </article>
+
+          <article class="lagu">
+            <h3>Kamado Tanjiro no Uta</h3>
+            <p class="artis">Go Shiina feat. Nami Nakashima</p>
+            <p class="info">Insert song, episode 19</p>
+            <audio controls preload="none">
+              <source src="assets/audio/kamado-tanjiro-no-uta.mp3" type="audio/mpeg">
+              Your browser does not support the audio player.
+            </audio>
+          </article>
+
+          <article class="lagu">
+            <h3>Zenitsu 7th Form: Flaming Thunder God</h3>
+            <p class="artis">OST Cover</p>
+            <p class="info">Zenitsu vs Kaigaku</p>
+            <audio controls preload="none">
+              <source src="assets/audio/zenitsu-fight.mp3" type="audio/mpeg">
+              Your browser does not support the audio player.
+            </audio>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="gelap">
+      <div class="container">
+        <h2>Review Form</h2>
+        <!-- Form: form ulasan cuma tampilan jadi nggak ada data yang dikirim -->
+        <form action="#" method="get">
+          <!-- Form: label for nyambung ke input lewat id -->
+          <label for="nama">Name</label>
+          <input type="text" id="nama" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder=" mohamadzulfikri200626@gmail.com">
+
+          <label for="favorit">Favorite Character</label>
+          <select id="favorit">
+            <option>Tanjiro Kamado</option>
+            <option>Nezuko Kamado</option>
+            <option>Zenitsu Agatsuma</option>
+            <option>Inosuke Hashibira</option>
+            <option>Genya Shinazugawa</option>
+            <option>Kanao Tsuyuri</option>
+            <option>Murata</option>
+            <option>Giyu Tomioka</option>
+          </select>
+
+          <label for="ulasan">Review</label>
+          <textarea id="ulasan" rows="5" placeholder="Write your thoughts"></textarea>
+
+          <button class="tombol" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Semantic HTML: footer dipakai buat bagian penutup halaman -->
+  <footer>
+    <div class="container footer-isi">
+      <div>
+        <p>&copy; 2026 Mohamad Zul Fikri</p>
+        <p class="kecil">
+          Unofficial fan project, not affiliated with Koyoharu Gotouge, SHUEISHA, Aniplex, or Ufotable.
+          Images belong to their respective owners. Story and character descriptions are paraphrased from
+          <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba" target="_blank" rel="noopener noreferrer">Wikipedia</a> and its
+          <a href="https://kimetsu-no-yaiba.fandom.com/id/wiki/Kimetsu_no_Yaiba_Wiki" target="_blank" rel="noopener noreferrer">character list</a>
+          (CC BY-SA).
+        </p>
+      </div>
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="https://www.demonslayer-anime.com" target="_blank" rel="noopener noreferrer">Official Site</a></li>
+        <!-- Email link: mailto membuka aplikasi email saat diklik -->
+        <li><a href="mailto:mohamadzulfikri200626@gmail.com"> mohamadzulfikri200626@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,592 @@
+/* External CSS: file ini dipakai bareng semua halaman */
+
+/* ===== DASAR (semua halaman) ===== */
+
+/* Box Model: reset margin dan padding lalu border-box biar ukuran gampang dihitung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS dasar: warna latar dan teks diatur lewat body */
+body {
+  background-color: #0b0b0d;
+  color: #eeeeee;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2fd0c0;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+/* Selector: class selector diawali titik dan container membatasi lebar isi */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.gelap {
+  background-color: #17171b;
+}
+
+.kecil {
+  color: #a0a0a8;
+  font-size: 0.85rem;
+}
+
+.catatan {
+  color: #a0a0a8;
+  font-style: italic;
+}
+
+/* ===== TOMBOL ===== */
+
+/* Box Model: padding buat jarak dalam dan border buat garis tepi tombol */
+.tombol {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #d3202f;
+  background-color: #d3202f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Pseudo-class: hover aktif saat kursor ada di atas tombol */
+.tombol:hover {
+  background-color: transparent;
+}
+
+.tombol:focus {
+  outline: 2px solid #2fd0c0;
+}
+
+.tombol:active {
+  background-color: #2fd0c0;
+  border-color: #2fd0c0;
+  color: #000000;
+}
+
+.tombol-garis {
+  margin-left: 10px;
+  background-color: transparent;
+  border-color: #2e2e35;
+}
+
+/* ===== HEADER DAN MENU ===== */
+
+/* Position: sticky bikin header nempel di atas saat di-scroll */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #000000;
+  border-bottom: 1px solid #2e2e35;
+}
+
+/* Flexbox: logo di kiri dan menu di kanan */
+.header-isi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.logo {
+  color: #eeeeee;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+
+/* Selector: descendant selector buat ul yang ada di dalam nav */
+nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  position: relative;
+  color: #a0a0a8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #eeeeee;
+}
+
+/* Pseudo-element: after dipakai buat garis merah di bawah menu */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #d3202f;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== HERO ===== */
+
+#hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 85vh;
+  padding: 0;
+  background-color: #3a0a10;
+}
+
+/* Position: absolute bikin video memenuhi seluruh hero */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  margin-bottom: 14px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
+#hero p {
+  max-width: 560px;
+  margin-bottom: 20px;
+}
+
+#hero .tagline {
+  color: #2fd0c0;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* ===== ABOUT ===== */
+
+#about p {
+  max-width: 700px;
+  margin-bottom: 18px;
+  color: #cccccc;
+}
+
+/* Pseudo-element: before dipakai buat balok merah di sebelah judul */
+#about h2::before,
+#facts h2::before,
+#characters h2::before,
+#gallery h2::before,
+#recommendations h2::before,
+#music h2::before,
+#review h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 28px;
+  margin-right: 14px;
+  background-color: #d3202f;
+}
+
+/* ===== ANIME FACTS ===== */
+
+.dua-kolom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.daftar-fakta li {
+  margin-bottom: 14px;
+  padding-left: 18px;
+  border-left: 3px solid #2fd0c0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #2e2e35;
+}
+
+caption {
+  padding-bottom: 10px;
+  color: #a0a0a8;
+  text-align: left;
+}
+
+th, td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #2e2e35;
+  text-align: left;
+}
+
+th {
+  color: #2fd0c0;
+}
+
+/* ===== CHARACTERS ===== */
+
+/* Grid: card karakter dibagi empat kolom */
+.grid-karakter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.kartu {
+  background-color: #17171b;
+  border: 1px solid #2e2e35;
+  border-top: 4px solid #2fd0c0;
+}
+
+.kartu:hover {
+  transform: translateY(-20px);
+  border-color: #d3202f;
+  transition: transform 1s;
+}
+
+.kartu-nezuko  { border-top-color: #f06a8a; }
+.kartu-zenitsu { border-top-color: #f2c230; }
+.kartu-inosuke { border-top-color: #6c8ebf; }
+.kartu-genya   { border-top-color: #7bc67b; }
+.kartu-kanao   { border-top-color: #c58aff; }
+.kartu-murata  { border-top-color: #e0b080; }
+.kartu-giyu    { border-top-color: #3d7be0; }
+
+.kartu img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.kartu-isi {
+  padding: 20px;
+}
+
+.kartu-isi h3 {
+  margin-bottom: 8px;
+}
+
+.kartu-isi p {
+  margin-bottom: 14px;
+  color: #a0a0a8;
+}
+
+.kartu-isi li {
+  padding: 6px 0;
+  border-top: 1px solid #2e2e35;
+  font-size: 0.9rem;
+}
+
+/* ===== GALLERY ===== */
+
+/* Grid: galeri juga dibagi empat kolom */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.galeri figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.galeri img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.galeri figure:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.galeri figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 12px 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 0.85rem;
+}
+
+.trailer {
+  margin-top: 30px;
+  padding: 20px 24px;
+  border-left: 4px solid #2fd0c0;
+  background-color: #0b0b0d;
+}
+
+/* ===== RECOMMENDATIONS ===== */
+
+/* Flexbox: card rekomendasi berjajar ke samping */
+.daftar-rekom {
+  display: flex;
+  gap: 24px;
+}
+
+.rekom {
+  flex: 1;
+  background-color: #17171b;
+  border: 1px solid #2e2e35;
+}
+
+.rekom:hover {
+  border-color: #d3202f;
+  transform: translateY(-8px);
+  transition: transform 1s;
+}
+
+.rekom-utama {
+  flex: 2;
+  border-color: #d3202f;
+}
+
+.rekom img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== MUSIC ===== */
+
+#music {
+  border-top: 1px solid #2e2e35;
+}
+
+.daftar-lagu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.lagu {
+  padding: 20px;
+  background-color: #17171b;
+  border: 1px solid #2e2e35;
+  border-left: 4px solid #d3202f;
+}
+
+.lagu .artis {
+  color: #2fd0c0;
+  font-size: 0.9rem;
+}
+
+.lagu .info {
+  margin-bottom: 14px;
+  color: #a0a0a8;
+  font-size: 0.85rem;
+}
+
+.lagu audio {
+  width: 100%;
+}
+
+/* ===== FORM ===== */
+
+form {
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  color: #a0a0a8;
+  font-size: 0.85rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b0b0d;
+  border: 1px solid #2e2e35;
+  color: #eeeeee;
+  font-family: Arial, sans-serif;
+}
+
+/* Pseudo-class: focus aktif saat kolom lagi diisi */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2fd0c0;
+}
+
+form .tombol {
+  margin-top: 24px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  padding: 40px 0;
+  background-color: #000000;
+  border-top: 2px solid #d3202f;
+}
+
+.footer-isi {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-isi div {
+  max-width: 500px;
+}
+
+footer li {
+  margin-bottom: 6px;
+}
+
+/* ===== HALAMAN PROFIL ===== */
+
+.profil {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.foto-profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  border: 3px solid #d3202f;
+  border-radius: 50%;
+  background-color: #17171b;
+  font-family: Georgia, serif;
+  font-size: 4rem;
+}
+
+.foto-profil img {
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.prodi {
+  margin-bottom: 16px;
+  color: #2fd0c0;
+  font-style: italic;
+}
+
+.profil h2 {
+  margin: 30px 0 14px;
+  font-size: 1.5rem;
+}
+
+.daftar-skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.daftar-skill li {
+  padding: 8px 18px;
+  border: 1px solid #2e2e35;
+  background-color: #17171b;
+}
+
+.profil .tombol {
+  margin-top: 30px;
+}
+
+/* ===== HALAMAN LOGIN ===== */
+
+.halaman-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #3a0a10, #0b0b0d 60%);
+}
+
+.panel-login {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  padding: 44px 36px 32px;
+  background-color: #17171b;
+  border: 1px solid #2e2e35;
+}
+
+.panel-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #d3202f;
+}
+
+.panel-login h1 {
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+.panel-login p {
+  color: #a0a0a8;
+}
+
+.panel-login .tombol {
+  width: 100%;
+  margin-top: 24px;
+}
