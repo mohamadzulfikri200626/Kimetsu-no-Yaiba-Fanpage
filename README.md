@@ -17,7 +17,7 @@ Teks di halaman utama pakai bahasa Inggris karena ceritanya diambil dari Wikiped
 
 ## Isi halaman utama
 
-Kalau dibuka dari atas, urutannya begini. Pertama ada header dengan menu navigasi, lalu hero yang pakai video sebagai background. Setelah itu ada About (cerita singkat), Anime Facts (daftar fakta dan tabel informasi), dan Characters yang isinya 8 card karakter. Berikutnya ada Gallery, tiga card Recommendations, dan Music yang punya pemutar audio untuk 1 lagu. Barulah di bagian bawah ada form ulasan (cuma tampilan, nggak ngirim data) dan footer.
+Kalau dibuka dari atas, urutannya begini. Pertama ada header dengan menu navigasi, lalu hero yang pakai video sebagai background. Setelah itu ada About (cerita singkat), Anime Facts (daftar fakta dan tabel informasi), dan Characters yang isinya 8 card karakter. Berikutnya ada Gallery, tiga card Recommendations, dan Music yang punya pemutar audio untuk 1 lagu saja yang dapat dimainkan, dikarenakan github hanya bisa mengupload maksimal 20mb saja. Barulah di bagian bawah ada form ulasan (cuma tampilan, nggak ngirim data) dan footer.
 
 ## Struktur folder
 
